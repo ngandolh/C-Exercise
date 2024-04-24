@@ -1,11 +1,11 @@
 ﻿public class Solution
 {
-    public static void Main(string[] args)
-    {
-        int[] arr = { 3, 2, 3 };
-        Solution solution = new Solution();
-        solution.TwoSum(arr, 6);
-    }
+    //public static void Main(string[] args)
+    //{
+    //    int[] arr = { 3, 2, 3 };
+    //    Solution solution = new Solution();
+    //    solution.TwoSum(arr, 6);
+    //}
     public int[] TwoSum(int[] nums, int target)
     {
         int sum = 0;
