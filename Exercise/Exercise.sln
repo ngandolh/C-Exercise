@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "..\OOP\OOP.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoSum", "..\TwoSum\TwoSum.csproj", "{400940FD-8CF9-468C-8C22-8AAD6845C273}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTwoNumbers", "..\AddTwoNumbers\AddTwoNumbers.csproj", "{F584D2D9-0AC8-42A7-A40E-BDEDF50D2644}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddTwoNumbers", "..\AddTwoNumbers\AddTwoNumbers.csproj", "{F584D2D9-0AC8-42A7-A40E-BDEDF50D2644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubstring", "..\LongestSubstring\LongestSubstring.csproj", "{89F39E89-C21D-4716-819A-D9D3B8A1A45D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F584D2D9-0AC8-42A7-A40E-BDEDF50D2644}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F584D2D9-0AC8-42A7-A40E-BDEDF50D2644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F584D2D9-0AC8-42A7-A40E-BDEDF50D2644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89F39E89-C21D-4716-819A-D9D3B8A1A45D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F39E89-C21D-4716-819A-D9D3B8A1A45D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F39E89-C21D-4716-819A-D9D3B8A1A45D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F39E89-C21D-4716-819A-D9D3B8A1A45D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

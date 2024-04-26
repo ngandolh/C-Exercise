@@ -1,2 +1,9 @@
 
 *.vsidx
+*.cs
+*.json
+*.cache
+*.cache
+*.cache
+*.editorconfig
+*.bin
