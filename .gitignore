@@ -7,3 +7,10 @@
 *.cache
 *.editorconfig
 *.bin
+*.dll
+*.targets
+*.pdb
+*.props
+*.exe
+*.BuildWithSkipAnalyzers
+*.CopyComplete
