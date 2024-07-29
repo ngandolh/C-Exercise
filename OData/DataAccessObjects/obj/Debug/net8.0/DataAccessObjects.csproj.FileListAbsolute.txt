@@ -1,0 +1,16 @@
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.AssemblyInfoInputs.cache
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.AssemblyInfo.cs
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.csproj.CoreCompileInputs.cache
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.sourcelink.json
+D:\Project\C#\OData\DataAccessObjects\bin\Debug\net8.0\DataAccessObjects.deps.json
+D:\Project\C#\OData\DataAccessObjects\bin\Debug\net8.0\DataAccessObjects.dll
+D:\Project\C#\OData\DataAccessObjects\bin\Debug\net8.0\DataAccessObjects.pdb
+D:\Project\C#\OData\DataAccessObjects\bin\Debug\net8.0\BusinessObject.dll
+D:\Project\C#\OData\DataAccessObjects\bin\Debug\net8.0\BusinessObject.pdb
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.csproj.AssemblyReference.cache
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAcce.79975846.Up2Date
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.dll
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\refint\DataAccessObjects.dll
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\DataAccessObjects.pdb
+D:\Project\C#\OData\DataAccessObjects\obj\Debug\net8.0\ref\DataAccessObjects.dll
