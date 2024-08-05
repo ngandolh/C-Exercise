@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\C-Exercise\\AddTwoNumbers\\AddTwoNumbers.csproj": {}
+    "D:\\Project\\C#\\AddTwoNumbers\\AddTwoNumbers.csproj": {}
   },
   "projects": {
-    "E:\\C#\\C-Exercise\\AddTwoNumbers\\AddTwoNumbers.csproj": {
+    "D:\\Project\\C#\\AddTwoNumbers\\AddTwoNumbers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\C-Exercise\\AddTwoNumbers\\AddTwoNumbers.csproj",
+        "projectUniqueName": "D:\\Project\\C#\\AddTwoNumbers\\AddTwoNumbers.csproj",
         "projectName": "AddTwoNumbers",
-        "projectPath": "E:\\C#\\C-Exercise\\AddTwoNumbers\\AddTwoNumbers.csproj",
-        "packagesPath": "C:\\Users\\ngant\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\C-Exercise\\AddTwoNumbers\\obj\\",
+        "projectPath": "D:\\Project\\C#\\AddTwoNumbers\\AddTwoNumbers.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\C#\\AddTwoNumbers\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ngant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -60,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AddTwoNumbers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c766d68187fe4a7c08c4d803988f5228e87a4a78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68de1aaa94a15d440691d9dde80b7112ce91e211")]
 [assembly: System.Reflection.AssemblyProductAttribute("AddTwoNumbers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AddTwoNumbers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
