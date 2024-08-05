@@ -16,7 +16,7 @@ public class CollectionDefinition
     //Type of collections: Generic collections and Non-Generic collections
 
     public void Definition()
-	{
+    {
         // Classes
         int[] array = new int[10];
         List<int> list = new List<int>();
@@ -27,10 +27,10 @@ public class CollectionDefinition
         Dictionary<int, string> dictionary = new Dictionary<int, string>();
 
         // Interfaces
-        ICollection<int> collection = list; 
+        ICollection<int> collection = list;
         IEnumerable<int> enumerable = list;
         IEnumerator<int> enumerator = enumerable.GetEnumerator();
-        IList<int> iList = list; 
-        IDictionary<int, string> iDictionary = dictionary; 
+        IList<int> iList = list;
+        IDictionary<int, string> iDictionary = dictionary;
     }
 }
