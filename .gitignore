@@ -1,9 +1,32 @@
+# Thư mục build output
+bin/
+obj/
+
+# IDE files
+.vscode/
+.idea/
+
+# Các file và thư mục phát sinh khác
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pdb
+*.opendb
+
+# Ignore build files
+**/obj/**
+**/bin/**
+**/Debug/**
+**/*.AssemblyInfoInputs.cache
+**/*.FileListAbsolute.txt
+**/*.dtbcache.v2
+**/obj/**/*.AssemblyInfo.cs
+
+# Only ignore AssemblyInfo.cs in obj folders
+**/obj/**/AssemblyInfo.cs	
 
 *.vsidx
-*.cs
 *.json
-*.cache
-*.cache
 *.cache
 *.editorconfig
 *.bin
@@ -14,3 +37,5 @@
 *.exe
 *.BuildWithSkipAnalyzers
 *.CopyComplete
+
+

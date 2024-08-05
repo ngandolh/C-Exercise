@@ -1,8 +1,0 @@
-D:\Project\C#\ProductManagement\obj\Debug\net8.0\ProductManagement.csproj.AssemblyReference.cache
-D:\Project\C#\ProductManagement\obj\Debug\net8.0\ProductManagement.GeneratedMSBuildEditorConfig.editorconfig
-D:\Project\C#\ProductManagement\obj\Debug\net8.0\ProductManagement.AssemblyInfoInputs.cache
-D:\Project\C#\ProductManagement\obj\Debug\net8.0\ProductManagement.AssemblyInfo.cs
-D:\Project\C#\ProductManagement\obj\Debug\net8.0\ProductManagement.csproj.CoreCompileInputs.cache
-D:\Project\C#\ProductManagement\obj\Debug\net8.0\ProductManagement.MvcApplicationPartsAssemblyInfo.cs
-D:\Project\C#\ProductManagement\obj\Debug\net8.0\ProductManagement.MvcApplicationPartsAssemblyInfo.cache
-D:\Project\C#\ProductManagement\obj\Debug\net8.0\ProductManagement.sourcelink.json
