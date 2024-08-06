@@ -19,13 +19,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegularExpressionMatching",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Easy", "Easy", "{F29D4539-15D0-4C31-9337-2E5080354E58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-RomanToInteger", "..\13-RomanToInteger\13-RomanToInteger.csproj", "{28959232-E824-4981-9DE0-AD6C9C992FE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13-RomanToInteger", "..\13-RomanToInteger\13-RomanToInteger.csproj", "{28959232-E824-4981-9DE0-AD6C9C992FE6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Collection", "Collection", "{79BEE3D4-C8DA-4E51-B0AA-9ABDCE559BDC}"
 	ProjectSection(SolutionItems) = preProject
 		ArrayList.cs = ArrayList.cs
 		Definition.cs = Definition.cs
+		LinkedList.cs = LinkedList.cs
 		List.cs = List.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedNode", "LinkedNode", "{C9A08D01-9D87-47F0-912A-1FE50ACF252B}"
+	ProjectSection(SolutionItems) = preProject
+		Node.cs = Node.cs
+		SinglyLinkedList.cs = SinglyLinkedList.cs
 	EndProjectSection
 EndProject
 Global
@@ -69,6 +76,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{089EC9B6-A92F-4043-851E-4ACA5A8EA72F} = {219DF91A-4950-4F4C-BDB4-360DA903B806}
 		{28959232-E824-4981-9DE0-AD6C9C992FE6} = {F29D4539-15D0-4C31-9337-2E5080354E58}
+		{C9A08D01-9D87-47F0-912A-1FE50ACF252B} = {79BEE3D4-C8DA-4E51-B0AA-9ABDCE559BDC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA837587-268E-49D9-A5BE-B9D163F8E5A5}

@@ -39,11 +39,11 @@ public class ArrayListDemo
         }
     }
 
-    public class Program
-    {
-        static void Main(string[] args)
-        {
-            ArrayListDemoModify();
-        }
-    }
+    //public class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        ArrayListDemoModify();
+    //    }
+    //}
 }
