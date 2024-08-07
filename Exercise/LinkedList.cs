@@ -17,28 +17,28 @@ public class LinkedListDemo
 	//Singly linked list contain nodes which have a data part and an address part
 	//Which points to the next node in the sequence of nodes.
 	//The next pointer of the last node will point to null.
-	public class Program
-	{
-        public static void Main(string[] args)
-        {
-            SinglyLinkedList list = new SinglyLinkedList();
+	//public class Program
+	//{
+ //       public static void Main(string[] args)
+ //       {
+ //           SinglyLinkedList list = new SinglyLinkedList();
 
-            list.InsertedAtBeginning(1);
-            list.InsertedAtBeginning(2);
-            list.InsertedAtBeginning(3);
+ //           list.InsertedAtBeginning(1);
+ //           list.InsertedAtBeginning(2);
+ //           list.InsertedAtBeginning(3);
 
-            Console.WriteLine("Danh sách sau khi chèn các nút vào đầu:");
-            list.PrintList(); // Kết quả mong đợi: 3 2 1
+ //           Console.WriteLine("Danh sách sau khi chèn các nút vào đầu:");
+ //           list.PrintList(); // Kết quả mong đợi: 3 2 1
 
-            list.InsertAtEnd(4);
-            list.InsertAtEnd(5);
+ //           list.InsertAtEnd(4);
+ //           list.InsertAtEnd(5);
 
-            Console.WriteLine("Danh sách sau khi chèn các nút vào cuối:");
-            list.PrintList(); // Kết quả mong đợi: 3 2 1 4 5
+ //           Console.WriteLine("Danh sách sau khi chèn các nút vào cuối:");
+ //           list.PrintList(); // Kết quả mong đợi: 3 2 1 4 5
 
-            list.RemoveAt(3);
-            Console.WriteLine("Danh sách sau khi xóa nút có giá trị 3:");
-            list.PrintList(); // Kết quả mong đợi: 2 1 4 5
-        }
-    }
+ //           list.RemoveAt(3);
+ //           Console.WriteLine("Danh sách sau khi xóa nút có giá trị 3:");
+ //           list.PrintList(); // Kết quả mong đợi: 2 1 4 5
+ //       }
+ //   }
 }

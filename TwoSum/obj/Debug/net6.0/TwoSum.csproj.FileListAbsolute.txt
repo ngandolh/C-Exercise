@@ -1,5 +1,0 @@
-D:\Project\C#\TwoSum\obj\Debug\net6.0\TwoSum.csproj.AssemblyReference.cache
-D:\Project\C#\TwoSum\obj\Debug\net6.0\TwoSum.GeneratedMSBuildEditorConfig.editorconfig
-D:\Project\C#\TwoSum\obj\Debug\net6.0\TwoSum.AssemblyInfoInputs.cache
-D:\Project\C#\TwoSum\obj\Debug\net6.0\TwoSum.AssemblyInfo.cs
-D:\Project\C#\TwoSum\obj\Debug\net6.0\TwoSum.csproj.CoreCompileInputs.cache

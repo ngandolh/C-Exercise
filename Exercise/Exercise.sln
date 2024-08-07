@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinkedNode", "LinkedNode", 
 		SinglyLinkedList.cs = SinglyLinkedList.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-LongestCommonPrefix", "14-LongestCommonPrefix\14-LongestCommonPrefix.csproj", "{81F32E07-C091-4FCD-A2EF-9F99F5E5F1B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{28959232-E824-4981-9DE0-AD6C9C992FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28959232-E824-4981-9DE0-AD6C9C992FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28959232-E824-4981-9DE0-AD6C9C992FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81F32E07-C091-4FCD-A2EF-9F99F5E5F1B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81F32E07-C091-4FCD-A2EF-9F99F5E5F1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81F32E07-C091-4FCD-A2EF-9F99F5E5F1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81F32E07-C091-4FCD-A2EF-9F99F5E5F1B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{089EC9B6-A92F-4043-851E-4ACA5A8EA72F} = {219DF91A-4950-4F4C-BDB4-360DA903B806}
 		{28959232-E824-4981-9DE0-AD6C9C992FE6} = {F29D4539-15D0-4C31-9337-2E5080354E58}
 		{C9A08D01-9D87-47F0-912A-1FE50ACF252B} = {79BEE3D4-C8DA-4E51-B0AA-9ABDCE559BDC}
+		{81F32E07-C091-4FCD-A2EF-9F99F5E5F1B5} = {F29D4539-15D0-4C31-9337-2E5080354E58}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA837587-268E-49D9-A5BE-B9D163F8E5A5}
