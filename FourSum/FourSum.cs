@@ -1,8 +1,6 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace _18_4Sum
+﻿namespace FourSum
 {
-    public class _18_4Sum
+    internal class FourSumSolution
     {
         //Example 1:
 
@@ -30,7 +28,7 @@ namespace _18_4Sum
             int[] nums = { 1000000000, 1000000000, 1000000000, 1000000000 };
             int target = -294967296;
 
-            var results = new _18_4Sum().FourSum(nums, target);
+            var results = new FourSumSolution().FourSum(nums, target);
             foreach (var combination in results)
             {
                 Console.WriteLine(string.Join(", ", combination));
@@ -70,7 +68,7 @@ namespace _18_4Sum
                         {
                             result.Add(new List<int> { nums[i], nums[j], nums[left], nums[right] });
 
-                            while (left < right && nums[left] == nums[left + 1]) 
+                            while (left < right && nums[left] == nums[left + 1])
                                 left++;
                             while (left < right && nums[right] == nums[right - 1])
                                 right--;
@@ -91,7 +89,5 @@ namespace _18_4Sum
             }
             return result;
         }
-
     }
-
 }
