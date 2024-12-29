@@ -8,8 +8,23 @@
         }
     }
 
-    public async bool ValidParentheses(string s)
+    public bool ValidParentheses(string s)
     {
-        
+        List<string> Data = new List<string> { ")", "(", "{", "}", "[", "]" };
+        bool result = false;
+        int count = 0;
+        foreach (var item in Data)
+        {
+            if (item.Contains(s))
+            {
+                result = true;
+                count++;
+            }
+            else
+            {
+                result = false;
+            }
+        }
+        return result;
     }
 }
