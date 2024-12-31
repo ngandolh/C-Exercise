@@ -10,6 +10,10 @@ namespace _21_MergeTwoSortedLists
     {
         static void Main(string[] args)
         {
+            ListNode listNull1 = new ListNode();
+            ListNode listNull2 = new ListNode();
+
+
             // Khởi tạo list1 = [1, 2, 4]
             ListNode list1 = new ListNode(1);
             list1.next = new ListNode(2);
@@ -19,11 +23,17 @@ namespace _21_MergeTwoSortedLists
             ListNode list2 = new ListNode(1);
             list2.next = new ListNode(3);
             list2.next.next = new ListNode(4);
+
+            var result1 = MergeTwoLists(listNull1, listNull2);
+            Console.WriteLine(ListNodeToString(result1));
+
+            var result2 = MergeTwoLists(list1, list2);
+            Console.WriteLine(ListNodeToString(result2));
+
         }
 
-        public ListNode MergeTwoLists(ListNode list1, ListNode list2)
+        public static ListNode MergeTwoLists(ListNode list1, ListNode list2)
         {
-            // Nếu một trong hai danh sách là null, trả về danh sách còn lại
             if (list1 == null) return list2;
             if (list2 == null) return list1;
 
@@ -46,10 +56,9 @@ namespace _21_MergeTwoSortedLists
                     current.next = list2;
                     list2 = list2.next;
                 }
-                current = current.next; // Di chuyển con trỏ đến nút tiếp theo
+                current = current.next;
             }
 
-            // Nếu còn phần tử trong một danh sách, nối nó vào kết quả
             if (list1 != null)
             {
                 current.next = list1;
@@ -72,6 +81,20 @@ namespace _21_MergeTwoSortedLists
                 this.val = val;
                 this.next = next;
             }
+        }
+
+        public static string ListNodeToString(ListNode node)
+        {
+            if (node == null) return "[]";
+
+            var result = "";
+            while (node != null)
+            {
+                result += node.val + " -> ";
+                node = node.next;
+            }
+            result += "null";
+            return result;
         }
 
     }
