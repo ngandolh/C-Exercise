@@ -1,16 +1,30 @@
 ﻿
+using System.Collections.Generic;
+
 namespace _23_MergekSortedLists
 {
     internal class Solutions
     {
         static void Main(string[] args)
         {
-            ListNode[] lists1 = new ListNode[]
+            //ListNode[] lists1 = new ListNode[]
+            //{
+            //    CreateLinkedList(new int[] { 1, 4, 5 }),
+            //    CreateLinkedList(new int[] { 1, 3, 4 }),
+            //    CreateLinkedList(new int[] { 2, 6 })
+            //};
+
+            ListNode list1 = new ListNode(1, new ListNode(4, new ListNode(5)));
+            ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+            ListNode list3 = new ListNode(2, new ListNode(6));
+
+            ListNode[] lists1 = new ListNode[] { list1, list2, list3 };
+
+            Console.WriteLine("List1: ", lists1);
+            foreach (ListNode item in lists1)
             {
-                CreateLinkedList(new int[] { 1, 4, 5 }),
-                CreateLinkedList(new int[] { 1, 3, 4 }),
-                CreateLinkedList(new int[] { 2, 6 })
-            };
+                PrintListNode(item);
+            }
 
             ListNode merged1 = new Solutions().MergeKLists(lists1);
             PrintListNode(merged1 );
@@ -25,13 +39,14 @@ namespace _23_MergekSortedLists
                 var current = l;
                 while (current != null)
                 {
-                    mergeList.Add(l.val);
+                    mergeList.Add(current.val);
                     current = current.next;
                 }
             }
 
             mergeList.Sort();
 
+            //Change data type List<int> -> ListNode
             ListNode dummy = new ListNode(-1);
             ListNode currentNode = dummy;
 
