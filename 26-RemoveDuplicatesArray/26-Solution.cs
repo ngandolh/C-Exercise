@@ -24,6 +24,10 @@ namespace _26_RemoveDuplicatesArray
             Array.Sort(nums);
 
             List<int> list = new List<int>();
+
+            //Case: Index[0]
+            list.Add(nums[0]);
+            //Case: for start Index[1]
             for (int i = 1; i < nums.Length; i++)
             {
                 if (nums[i] != nums[i - 1])
@@ -32,6 +36,24 @@ namespace _26_RemoveDuplicatesArray
                 }
             }
             return list.ToArray();
+        }
+
+        public int RemoveDuplicatesInt(int[] nums)
+        {
+            if (nums.Length == 0) return 0;
+
+            int i = 0; // Con trỏ theo dõi vị trí phần tử không trùng lặp cuối cùng.
+             
+            for (int j = 1; j < nums.Length; j++)
+            {
+                if (nums[j] != nums[i])
+                { // Nếu tìm thấy phần tử không trùng lặp.
+                    i++; // Tăng vị trí lưu trữ.
+                    nums[i] = nums[j]; // Ghi đè phần tử mới vào vị trí i.
+                }
+            }
+
+            return i + 1; // Độ dài của mảng không trùng lặp.
         }
     }
 }
