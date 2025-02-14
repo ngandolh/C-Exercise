@@ -27,10 +27,20 @@ namespace _912_SortAnArray
             //selectionSortSolution.SortArray(nums);
             //Console.WriteLine("Result: " + string.Join(", ", nums));
 
-            int[] case1 = { 5, 2, 3, 1 };
-            var selectionSortSolution1 = new SelectionSortSolution();
-            selectionSortSolution1.SortArray(case1);
-            Console.WriteLine("Result: " + string.Join(", ", case1));
+            //int[] case1 = { 5, 2, 3, 1 };
+            //var selectionSortSolution1 = new SelectionSortSolution();
+            //selectionSortSolution1.SortArray(case1);
+            //Console.WriteLine("Result: " + string.Join(", ", case1));
+
+            //int[] case2 = { 5, 1, 1, 2, 0, 0 };
+            //var insertSortSolution = new InsertSortSolution();
+            //insertSortSolution.SortArray(case2);
+            //Console.WriteLine("Result: " + string.Join(", ", case2));
+
+            int[] arrayInsert = { 86, 13, 60, 73, 52, 40 };
+            var insertSortSolution1 = new InsertSortSolution();
+            insertSortSolution1.SortArray(arrayInsert);
+            Console.WriteLine("Result: " + string.Join(", ", arrayInsert));
         }
     }
 }
