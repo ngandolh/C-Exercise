@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _912_SortAnArray
+﻿namespace _912_SortAnArray
 {
     public class SelectionSortSolution
     {

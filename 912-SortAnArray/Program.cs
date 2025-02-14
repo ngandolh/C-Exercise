@@ -1,7 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-using System.Xml;
-
-namespace _912_SortAnArray
+﻿namespace _912_SortAnArray
 {
 
     // Example 1:
@@ -37,10 +34,14 @@ namespace _912_SortAnArray
             //insertSortSolution.SortArray(case2);
             //Console.WriteLine("Result: " + string.Join(", ", case2));
 
-            int[] arrayInsert = { 86, 13, 60, 73, 52, 40 };
-            var insertSortSolution1 = new InsertSortSolution();
-            insertSortSolution1.SortArray(arrayInsert);
-            Console.WriteLine("Result: " + string.Join(", ", arrayInsert));
+            //int[] arrayInsert = { 86, 13, 60, 73, 52, 40 };
+            //var insertSortSolution1 = new InsertSortSolution();
+            //insertSortSolution1.SortArray(arrayInsert);
+            //Console.WriteLine("Result: " + string.Join(", ", arrayInsert));
+
+            int[] array = {73, 57, 49, 99, 133, 20, 1, 34 };
+            MergeSortSolution.MergeSort(array, 0, array.Length - 1);
+            Console.WriteLine("Result: " + string.Join(", ", array));
         }
     }
 }
