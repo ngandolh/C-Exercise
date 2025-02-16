@@ -39,8 +39,14 @@
             //insertSortSolution1.SortArray(arrayInsert);
             //Console.WriteLine("Result: " + string.Join(", ", arrayInsert));
 
-            int[] array = {73, 57, 49, 99, 133, 20, 1, 34 };
-            MergeSortSolution.MergeSort(array, 0, array.Length - 1);
+            //int[] array = {73, 57, 49, 99, 133, 20, 1, 34 };
+            //MergeSortSolution.MergeSort(array, 0, array.Length - 1);
+            //Console.WriteLine("Result: " + string.Join(", ", array));
+
+            //Expected: 14, 38, 39, 40, 42, 52, 67, 71, 96
+            //Result: 14, 38, 39, 40, 42, 52, 67, 71, 96
+            int[] array = {52, 96, 67, 71, 42, 38, 39, 40, 14 };
+            QuickSortSolution.QuickSort(array, 0, array.Length - 1);
             Console.WriteLine("Result: " + string.Join(", ", array));
         }
     }
