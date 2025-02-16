@@ -19,6 +19,8 @@ namespace _912_SortAnArray
             var i = leftIndex;
             var j = rightIndex;
             var pivot = array[leftIndex];
+            //int mid = leftIndex + (rightIndex - leftIndex) / 2;
+            //int pivot = MedianOfThree(array, leftIndex, mid, rightIndex);
 
             while (i <= j)
             {
@@ -53,6 +55,13 @@ namespace _912_SortAnArray
             {
                 QuickSort(array, i, rightIndex);
             }
+        }
+
+        private static int MedianOfThree(int[] array, int a, int b, int c)
+        {
+            if ((array[a] > array[b]) != (array[a] > array[c])) return array[a];
+            if ((array[b] > array[a]) != (array[b] > array[c])) return array[b];
+            return array[c];
         }
     }
 }
