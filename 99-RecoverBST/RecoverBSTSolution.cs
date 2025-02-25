@@ -22,10 +22,19 @@ namespace _99_RecoverBST
         private TreeNode first, second, prev;
         public void RecoverTree(TreeNode root)
         {
+            first = second = prev = null;
 
+            InorderTraverse(root);
+
+            if(first != null && second != null)
+            {
+                int temp = first.val;
+                first.val = second.val;
+                second.val = temp;
+            }
         }
 
-        public void RecoverRight(TreeNode root)
+        public void InorderTraverse(TreeNode root)
         {
             if (root == null)
             {
@@ -40,8 +49,8 @@ namespace _99_RecoverBST
             }
 
             prev = root;
-            
-            RecoverRight(root.right);
+
+            InorderTraverse(root.right);
         }
 
         public TreeNode Search(TreeNode root, int value)

@@ -2,59 +2,63 @@
 {
     internal class Program
     {
+
+        // Hàm duyệt inorder để in ra các giá trị của cây
+        static void InorderPrint(TreeNode root)
+        {
+            if (root == null) return;
+            InorderPrint(root.left);
+            Console.Write(root.val + " ");
+            InorderPrint(root.right);
+        }
+
         static void Main(string[] args)
         {
-            // Hàm duyệt inorder để in ra các giá trị của cây
-            static void InorderPrint(TreeNode root)
-            {
-                if (root == null) return;
-                InorderPrint(root.left);
-                Console.Write(root.val + " ");
-                InorderPrint(root.right);
-            }
+            RecoverBSTSolution solution = new RecoverBSTSolution();
 
-            static void Main(string[] args)
-            {
-                RecoverBSTSolution solution = new RecoverBSTSolution();
+            // Ví dụ: Tạo cây thủ công theo mẫu đầu vào [3, 1, 4, null, null, 2]
+            // Cây được biểu diễn như sau:
+            //         3
+            //        / \
+            //       1   4
+            //          /
+            //         2
+            //
+            // Ở đây, cây không hợp lệ vì 2 < 3 nhưng nằm ở nhánh phải của 3.
+            // Sau khi phục hồi, ta mong đợi cây có dạng:
+            //         2
+            //        / \
+            //       1   4
+            //          /
+            //         3
+            //
+            // Với inorder sau khi phục hồi sẽ là: 1 2 3 4
 
-                // Mảng test: [3, 1, 4, 2]
-                // Cây BST được xây dựng từ mảng này có dạng:
-                //       3
-                //      / \
-                //     1   4
-                //        /
-                //       2
-                // Ở đây, node 2 được chèn vào bên trái của 4 (do 2 < 4) nhưng lại nằm trong cây con bên phải của 3 (do 2 < 3),
-                // làm cho cây không phải là BST đúng.
-                int[] arr = { 3, 1, 4, 2 };
-                TreeNode root = solution.BuildBST(arr);
+            TreeNode root = new TreeNode(3);
+            root.left = new TreeNode(1);
+            root.right = new TreeNode(4);
+            root.right.left = new TreeNode(2);
 
-                Console.WriteLine("Inorder traversal của BST trước khi khôi phục:");
-                InorderPrint(root);
-                Console.WriteLine();
+            Console.WriteLine("Inorder traversal của cây trước khi phục hồi:");
+            InorderPrint(root);
+            Console.WriteLine();
 
-                // Khôi phục BST bằng cách tìm và hoán đổi 2 node bị lỗi
-                solution.RecoverTree(root);
+            // Gọi hàm phục hồi BST
+            solution.RecoverTree(root);
 
-                Console.WriteLine("Inorder traversal của BST sau khi khôi phục:");
-                InorderPrint(root);
-                Console.WriteLine();
+            Console.WriteLine("Inorder traversal của cây sau khi phục hồi:");
+            InorderPrint(root);
+            Console.WriteLine();
 
-                // Kiểm tra hàm Search
-                int searchValue = 2;
-                TreeNode found = solution.Search(root, searchValue);
-                if (found != null)
-                {
-                    Console.WriteLine($"Tìm thấy node có giá trị {searchValue}.");
-                }
-                else
-                {
-                    Console.WriteLine($"Không tìm thấy node có giá trị {searchValue}.");
-                }
+            // Kiểm tra hàm Search
+            int searchValue = 2;
+            TreeNode found = solution.Search(root, searchValue);
+            Console.WriteLine(found != null
+                ? $"Tìm thấy node có giá trị {found.val}."
+                : $"Không tìm thấy node có giá trị {searchValue}.");
 
-                // Giữ cửa sổ console mở
-                Console.ReadLine();
-            }
+            // Giữ cửa sổ console mở
+            Console.ReadLine();
         }
     }
 }
