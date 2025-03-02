@@ -1,6 +1,8 @@
 
-1211. Queries Quality and Percentage
+# 1211 Queries Quality and Percentage
 
+## SQL Query
+```sql
 SELECT 
     query_name, 
     ROUND(SUM(CAST(rating AS FLOAT) / position) / COUNT(query_name), 2) AS quality,
