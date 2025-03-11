@@ -19,3 +19,9 @@ Select user_id,
     CONCAT('', UPPER(SUBSTRING(name, 1, 1)), LOWER(SUBSTRING(name, 2, LEN(name)))) AS name
 From Users
 Order by user_id
+
+##1517. Find Users With Valid E-Mails
+````sql
+SELECT *
+FROM Users 
+WHERE mail  LIKE '[a-zA-Z]%@leetcode.com' AND mail NOT LIKE '%[^a-zA-Z0-9_.-]%@leetcode.com'
