@@ -1,4 +1,11 @@
 
+## 610. Triangle Judgement
+```sql
+Select x, y, z, IIF(x + y > z AND
+                    y + z > x AND
+                    z + x > y, 'Yes', 'No') as triangle
+From Triangle
+
 ## 1211 Queries Quality and Percentage
 
 ```sql
@@ -12,6 +19,13 @@ ORDER BY poor_query_percentage DESC, quality DESC;
 
 Runtime: 1766ms
 
+
+##1517. Find Users With Valid E-Mails
+````sql
+SELECT *
+FROM Users 
+WHERE mail  LIKE '[a-zA-Z]%@leetcode.com' AND mail NOT LIKE '%[^a-zA-Z0-9_.-]%@leetcode.com'
+
 ## 1667. Fix Names in a Table
 
 ```sql
@@ -20,8 +34,16 @@ Select user_id,
 From Users
 Order by user_id
 
-##1517. Find Users With Valid E-Mails
+
+##1978. Employees Whose Manager Left the Company
 ````sql
-SELECT *
-FROM Users 
-WHERE mail  LIKE '[a-zA-Z]%@leetcode.com' AND mail NOT LIKE '%[^a-zA-Z0-9_.-]%@leetcode.com'
+Select  e.employee_id
+FROM Employees e
+Where salary < 30000 AND e.manager_id IS NOT NULL
+AND NOT EXISTS(
+    Select 1
+    From Employees m
+    Where m.employee_id = e.manager_id
+)
+ORDER BY employee_id ASC
+
