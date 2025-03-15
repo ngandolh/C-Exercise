@@ -8,6 +8,7 @@ SELECT (
     ORDER BY salary DESC
     OFFSET 1 ROW FETCH NEXT 1 ROW ONLY
 ) AS SecondHighestSalary;
+```
 
 ## 610. Triangle Judgement
 ```sql
@@ -31,6 +32,14 @@ WITH rank_function AS (
 SELECT MAX(num) AS num
 FROM rank_function
 WHERE rn = 1;
+```
+## 1045. Customers Who Bought All Products
+```sql
+select customer_id
+from customer
+group by customer_id
+having count(distinct product_key) =
+(select count(distinct product_key) from Product)
 ```
 
 ## 1211. Queries Quality and Percentage
