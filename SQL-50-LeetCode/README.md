@@ -1,5 +1,14 @@
 # LeetCode SQL Solutions
 
+## 176. Second Highest Salary
+```sql
+SELECT (
+    SELECT DISTINCT salary 
+    FROM Employee
+    ORDER BY salary DESC
+    OFFSET 1 ROW FETCH NEXT 1 ROW ONLY
+) AS SecondHighestSalary;
+
 ## 610. Triangle Judgement
 ```sql
 SELECT x, y, z, 
