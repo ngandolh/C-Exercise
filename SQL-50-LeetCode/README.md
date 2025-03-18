@@ -16,6 +16,22 @@ FROM Logs l1
 JOIN Logs l2 ON l1.num = l2.num AND l1.id = l2.id - 1
 JOIN Logs l3 ON l2.num = l3.num AND l2.id = l3.id - 1
 ```
+## 185. Department Top Three Salaries
+```sql
+WITH RankedSalaries AS (
+    SELECT 
+        e.salary, 
+        d.name AS Department, 
+        e.name AS Employee,
+        DENSE_RANK() OVER (PARTITION BY e.departmentId ORDER BY e.salary DESC) AS rnk
+    FROM Employee e
+    JOIN Department d ON e.departmentId = d.id
+)
+
+SELECT Department, Employee, salary AS Salary
+FROM RankedSalaries
+WHERE rnk IN (1,2,3)
+```
 
 ## 610. Triangle Judgement
 ```sql
