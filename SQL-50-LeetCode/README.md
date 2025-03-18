@@ -76,6 +76,32 @@ FROM RollingSums
 Order by visited_on 
 OFFSET 6 rows
 ```
+## 1341. Movie Rating
+```sql
+WITH movie_average AS (
+    SELECT mr.movie_id, m.title AS title, AVG(mr.rating * 1.0) AS avg_movie
+    FROM Movies m
+    LEFT JOIN MovieRating mr ON m.movie_id = mr.movie_id
+    WHERE created_at BETWEEN '2020-02-01' AND '2020-02-29'
+    GROUP BY mr.movie_id, m.title
+),
+user_average AS (
+    SELECT mr.user_id, u.name AS name, COUNT(rating) AS count_user
+    FROM Users u
+    LEFT JOIN MovieRating mr ON u.user_id = mr.user_id
+    GROUP BY mr.user_id, u.name
+)
+
+SELECT results FROM (
+    SELECT TOP 1 title AS results FROM movie_average ORDER BY avg_movie DESC, title ASC
+) AS movie_result
+
+UNION ALL
+
+SELECT results FROM (
+    SELECT TOP 1 name AS results FROM user_average ORDER BY count_user DESC, name ASC
+) AS user_result;
+```
 
 ## 1517. Find Users With Valid E-Mails
 ```sql
