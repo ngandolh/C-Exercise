@@ -17,8 +17,8 @@ namespace _1732_FindTheHighestAltitude
             {
                 total += gain[i];
                 Console.WriteLine("Gain[i]: " + gain[i] + " = " + total + " (total)");
-              
-                if(result < total)
+
+                if (result < total)
                 {
                     result = total;
                 }
@@ -32,5 +32,29 @@ namespace _1732_FindTheHighestAltitude
 
             return result;
         }
+
+        public int LargestAltitude2(int[] gain)
+        {
+            int result = int.MinValue;
+            int total = 0;
+            int i = 0;
+            while (i < gain.Length)
+            {
+                total += gain[i];
+                //Console.WriteLine("Gain[i]: " + gain[i] + " = " + total + " (total)");
+                if (result < total)
+                {
+                    result = total;
+                }
+                i++;
+            }
+
+            if (result < 0)
+            {
+                result = 0;
+            }
+            return result;
+        }
+
     }
 }
