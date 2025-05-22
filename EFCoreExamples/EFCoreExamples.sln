@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreExamples", "EFCoreExamples.csproj", "{C3982A85-29CC-4B58-8C16-C8A6C9F37B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstEfCoreApp", "..\MyFirstEfCoreApp\MyFirstEfCoreApp.csproj", "{0854F311-C421-40FE-804C-17FC575D4721}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "..\DataLayer\DataLayer.csproj", "{B277F295-2D95-49A7-A2DE-6926A2ED8684}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3982A85-29CC-4B58-8C16-C8A6C9F37B8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3982A85-29CC-4B58-8C16-C8A6C9F37B8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3982A85-29CC-4B58-8C16-C8A6C9F37B8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3982A85-29CC-4B58-8C16-C8A6C9F37B8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0854F311-C421-40FE-804C-17FC575D4721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0854F311-C421-40FE-804C-17FC575D4721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0854F311-C421-40FE-804C-17FC575D4721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0854F311-C421-40FE-804C-17FC575D4721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B277F295-2D95-49A7-A2DE-6926A2ED8684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B277F295-2D95-49A7-A2DE-6926A2ED8684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B277F295-2D95-49A7-A2DE-6926A2ED8684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B277F295-2D95-49A7-A2DE-6926A2ED8684}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
