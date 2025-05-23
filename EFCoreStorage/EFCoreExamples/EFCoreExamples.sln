@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreExamples", "EFCoreExa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstEfCoreApp", "..\MyFirstEfCoreApp\MyFirstEfCoreApp.csproj", "{0854F311-C421-40FE-804C-17FC575D4721}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "..\DataLayer\DataLayer.csproj", "{B277F295-2D95-49A7-A2DE-6926A2ED8684}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{E4CE338C-00D6-43B9-9E03-F57DA598F981}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{0854F311-C421-40FE-804C-17FC575D4721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0854F311-C421-40FE-804C-17FC575D4721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0854F311-C421-40FE-804C-17FC575D4721}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B277F295-2D95-49A7-A2DE-6926A2ED8684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B277F295-2D95-49A7-A2DE-6926A2ED8684}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B277F295-2D95-49A7-A2DE-6926A2ED8684}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B277F295-2D95-49A7-A2DE-6926A2ED8684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4CE338C-00D6-43B9-9E03-F57DA598F981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4CE338C-00D6-43B9-9E03-F57DA598F981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4CE338C-00D6-43B9-9E03-F57DA598F981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4CE338C-00D6-43B9-9E03-F57DA598F981}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
