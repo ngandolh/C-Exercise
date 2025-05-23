@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MyFirstEfCoreApp.Migrations
+namespace DataLayer.Migrations
 {
     public partial class ManageBook : Migration
     {
