@@ -10,8 +10,8 @@ namespace DataAccessLayer
     public class AppDbContext : DbContext
     {
         private const string ConnectionString =
-            @"Data Source=LAPTOP-HP6ERQBA\SQLEXPRESS,1433;Initial Catalog=MyFirstEfCoreDb;
-             Persist Security Info=True;User ID=sa;Password=12345";
+            @"Data Source=LAPTOP-HP6ERQBA\SQLEXPRESS,1433;Initial Catalog=ManageBook;
+             Persist Security Info=True;User ID=sa;Password=12345;TrustServerCertificate=True;";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
