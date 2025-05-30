@@ -10,6 +10,10 @@ namespace DataAccessLayer
     public class Tags
     {
         [Key]
-        public int TagId { get; set; }
+        [Required]
+        [MaxLength(40)]
+        public string TagId { get; set; }
+
+        public ICollection<Book> Books { get; set; }
     }
 }
