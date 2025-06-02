@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstEfCoreApp", "..\MyFi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{E4CE338C-00D6-43B9-9E03-F57DA598F981}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizLogic", "..\BizLogic\BizLogic.csproj", "{8947A1A6-D499-4291-9E15-0B4C9409725D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E4CE338C-00D6-43B9-9E03-F57DA598F981}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4CE338C-00D6-43B9-9E03-F57DA598F981}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4CE338C-00D6-43B9-9E03-F57DA598F981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8947A1A6-D499-4291-9E15-0B4C9409725D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8947A1A6-D499-4291-9E15-0B4C9409725D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8947A1A6-D499-4291-9E15-0B4C9409725D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8947A1A6-D499-4291-9E15-0B4C9409725D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

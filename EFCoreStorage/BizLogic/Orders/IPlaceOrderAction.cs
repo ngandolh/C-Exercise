@@ -1,6 +1,6 @@
 ﻿namespace BizLogic.Orders
 {
-    public interface IPlaceOrderAction
-    {
-    }
+    //public interface IPlaceOrderAction : IBizAction<PlaceOrderInDto, Order> { }
+    //{
+    //}
 }
