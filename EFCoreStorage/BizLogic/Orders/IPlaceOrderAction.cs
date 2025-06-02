@@ -1,6 +1,9 @@
-﻿namespace BizLogic.Orders
+﻿using BizLogic.GenericInterfaces;
+using DataAccessLayer.Entity;
+
+namespace BizLogic.Orders
 {
-    //public interface IPlaceOrderAction : IBizAction<PlaceOrderInDto, Order> { }
-    //{
-    //}
+    public interface IPlaceOrderAction : IBizAction<PlaceOrderInDto, Order> 
+    {
+    }
 }
