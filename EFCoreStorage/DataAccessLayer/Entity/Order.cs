@@ -15,7 +15,7 @@ namespace DataAccessLayer.Entity
 
         // relationships
 
-        //public ICollection<LineItem> LineItems { get; set; }
+        public ICollection<LineItem> LineItems { get; set; }
 
         // Extra columns not used by EF
 
